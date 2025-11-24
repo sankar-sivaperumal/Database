@@ -26,9 +26,15 @@ values(8, 8, 101, 90.1);
 insert  into enrollments(enrollment_id, student_id, course_id, marks)
 values(9, 9, 104, 95.1);
 
-select * from enrollments;
 
+
+
+ALTER TABLE enrollments MODIFY COLUMN enrollment_id INT AUTO_INCREMENT;
+
+
+
+select * from enrollments;
 DELETE FROM enrollments
 WHERE enrollment_id = 9;
 
-Drop table enrollments
+Drop table enrollments;
